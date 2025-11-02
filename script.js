@@ -92,10 +92,12 @@ function changeBackgroundColour(place, number) {
     let colour;
     if (word[number] === currentGuess.toLowerCase()[number]) {
         colour = '#6AAA64';
+        document.getElementById(currentGuess.toLowerCase()[number]).style.backgroundColor = '#6AAA64';
     } else if (word.includes(currentGuess.toLowerCase()[number])) {
         colour = '#C9B458';
     } else {
         colour = '#787C7E';
+        document.getElementById(currentGuess.toLowerCase()[number]).style.backgroundColor = '#787C7E';
     }
     place.style.backgroundColor = colour;
     place.style.border = `2px solid ${colour}`;
@@ -124,6 +126,7 @@ function addLetter(letter) {
         });
     }
 }
+
 
 
 
