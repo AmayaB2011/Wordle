@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,90.6,600;1,90.6,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.jpg">
+    <title>Wordle</title>
+</head>
+<body>
+    <div id="warning"></div>
+    <div id="container">
+        <div id="board">
+            <div id="row1">
+                <div class="box" id="place1"><span>‎</span></div>
+                <div class="box" id="place2"><span>‎</span></div>
+                <div class="box" id="place3"><span>‎</span></div>
+                <div class="box" id="place4"><span>‎</span></div>
+                <div class="box" id="place5"><span>‎</span></div>
+            </div>
+            <div id="row2">
+                <div class="box" id="place6"><span>‎</span></div>
+                <div class="box" id="place7"><span>‎</span></div>
+                <div class="box" id="place8"><span>‎</span></div>
+                <div class="box" id="place9"><span>‎</span></div>
+                <div class="box" id="place10"><span>‎</span></div>
+            </div>
+            <div id="row3">
+                <div class="box" id="place11"><span>‎</span></div>
+                <div class="box" id="place12"><span>‎</span></div>
+                <div class="box" id="place13"><span>‎</span></div>
+                <div class="box" id="place14"><span>‎</span></div>
+                <div class="box" id="place15"><span>‎</span></div>
+            </div>
+            <div id="row4">
+                <div class="box" id="place16"><span>‎</span></div>
+                <div class="box" id="place17"><span>‎</span></div>
+                <div class="box" id="place18"><span>‎</span></div>
+                <div class="box" id="place19"><span>‎</span></div>
+                <div class="box" id="place20"><span>‎</span></div>
+            </div>
+            <div id="row5">
+                <div class="box" id="place21"><span>‎</span></div>
+                <div class="box" id="place22"><span>‎</span></div>
+                <div class="box" id="place23"><span>‎</span></div>
+                <div class="box" id="place24"><span>‎</span></div>
+                <div class="box" id="place25"><span>‎</span></div>
+            </div>
+            <div id="row6">
+                <div class="box" id="place26"><span>‎</span></div>
+                <div class="box" id="place27"><span>‎</span></div>
+                <div class="box" id="place28"><span>‎</span></div>
+                <div class="box" id="place29"><span>‎</span></div>
+                <div class="box" id="place30"><span>‎</span></div>
+            </div>
+        </div>
+        <div id="keyboard" style="margin-top: 10px;">
+            <div class="row1">
+                <div class="key" id="q" onclick="addLetter('Q')">Q</div>
+                <div class="key" id="w" onclick="addLetter('W')">W</div>
+                <div class="key" id="e" onclick="addLetter('E')">E</div>
+                <div class="key" id="r" onclick="addLetter('R')">R</div>
+                <div class="key" id="t" onclick="addLetter('T')">T</div>
+                <div class="key" id="y" onclick="addLetter('Y')">Y</div>
+                <div class="key" id="u" onclick="addLetter('U')">U</div>
+                <div class="key" id="i" onclick="addLetter('I')">I</div>
+                <div class="key" id="o" onclick="addLetter('O')">O</div>
+                <div class="key" id="p" onclick="addLetter('P')">P</div>
+            </div>
+            <div class="row2">
+                <div class="key" id="a" onclick="addLetter('A')">A</div>
+                <div class="key" id="s" onclick="addLetter('S')">S</div>
+                <div class="key" id="d" onclick="addLetter('D')">D</div>
+                <div class="key" id="f" onclick="addLetter('F')">F</div>
+                <div class="key" id="g" onclick="addLetter('G')">G</div>
+                <div class="key" id="h" onclick="addLetter('H')">H</div>
+                <div class="key" id="j" onclick="addLetter('J')">J</div>
+                <div class="key" id="k" onclick="addLetter('K')">K</div>
+                <div class="key" id="l" onclick="addLetter('L')">L</div>
+            </div>
+            <div class="row3">
+                <div class="key" id="enterButton" style="width: 75px; font-size: 18px;" onclick="clickEnter()">ENTER</div>
+                <div class="key" id="z" onclick="addLetter('Z')">Z</div>
+                <div class="key" id="x" onclick="addLetter('X')">X</div>
+                <div class="key" id="c" onclick="addLetter('C')">C</div>
+                <div class="key" id="v" onclick="addLetter('V')">V</div>
+                <div class="key" id="b" onclick="addLetter('B')">B</div>
+                <div class="key" id="n" onclick="addLetter('N')">N</div>
+                <div class="key" id="m" onclick="addLetter('M')">M</div>
+                <div class="key" id="backspaceButton" style="width: 55px; font-size: 35px;" onclick="clickBackspace()">⬅</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
