@@ -1,5 +1,3 @@
-// let wordList = ['happy', 'hello', 'train', 'peach', 'panda', 'smell', 'drive'];
-// let word = wordList[Math.floor(Math.random() * wordList.length)];
 let currentGuess = '';
 let currentRow = 1;
 let wordFound = false;
@@ -126,5 +124,6 @@ function addLetter(letter) {
         });
     }
 }
+
 
 
